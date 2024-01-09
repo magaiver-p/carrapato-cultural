@@ -12,63 +12,61 @@
             font-family: Arial, sans-serif;
         }
         
-        .button-container {
+        .navbar {
+            background-color: #23d4d4;
+            padding: 10px;
             display: flex;
             align-items: center;
-            justify-content: flex-start;
-            padding: 10px;
         }
         
-        .button {
-            padding: 5px 10px;
-            font-size: 18px;
-            text-align: center;
-            text-decoration: none;
-            cursor: pointer;
-            border: 3px solid #393cf5;
-            border-radius: 30px;
-            color: #0997f7;
-            background-color: #23d4d4;
-            overflow: hidden;
-        }
-        
-        .button img {
+        .navbar img {
             max-width: 100%;
-            max-height: 40px;
-            border-radius: 10%;
-            margin-right: 5px;
+            max-height: 60px;
+            border-radius: 20%;
+            margin-right: 60px;
+        }
+        
+        .navbar a {
+            color: #0997f7;
+            text-decoration: none;
+            padding: 15px;
+            font-size: 18px;
+            margin: 5 10px;
         }
         
         @media (max-width: 600px) {
-            .button-container {
+            .navbar {
                 flex-direction: column;
                 align-items: center;
             }
-            .button {
-                margin-top: 10px;
+            .navbar img {
+                margin-right: 0;
+                margin-bottom: 60px;
             }
         }
     </style>
 </head>
 
 <body>
-    <!-- Container para o botão e a imagem ao lado -->
-    <div class="button-container">
-        <!-- Imagem ao lado do botão -->
+    <!-- Barra de navegação -->
+    <div class="navbar">
+        <!-- Imagem à esquerda na barra de navegação -->
         <img src="assets/images/carrapato-cultural. sem fundo.png" alt="Descrição da Imagem">
-        <!-- Botão com link "Inicio" -->
-        <button id="botaoLink" class="button" onclick="abrirLink()">Voltar Início</button>
+
+        <!-- Links da barra de navegação -->
+        <a href="index.html">Página Inicial</a>
+        <a href="pages-radio-camera-ao-vivo 10.html">Tv e rádio ao vivo</a>
+        <!-- Adicione mais links conforme necessário -->
     </div>
 
-    <!-- Script para abrir o link ao clicar nos botões -->
-    <script>
-        function abrirLink() {
-            window.location.href = "index.html";
-        }
-    </script>
+    <!-- Conteúdo da página -->
+    <p>Vamos assistir !!!...apagando as luzes...</p>
 </body>
 
 </html>
+
+
+
 
 <!DOCTYPE html>
 
@@ -96,7 +94,7 @@
         
         p {
             font-size: 1.2em;
-            color: #acf3e1;
+            color: #d6f0e9;
             font-family: 'Dancing Script', cursive;
             margin: 1%;
             text-align: center;
